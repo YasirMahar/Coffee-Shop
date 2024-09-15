@@ -10,7 +10,7 @@ Future<List<CoffeeTypes>> fetchCoffees() async {
     List<dynamic> data = jsonDecode(response.body);
     return data.map((item) => CoffeeTypes.fromJson(item)).toList();
   } else {
-    throw Exception('Failed to load coffee data');
+    throw Exception('Failed to load coffee data ');
   }
 }
 
